@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Menna El Sonny · Cover</title>
+<meta name="description" content="Menna El Sonny, lifestyle and skincare creator from Cairo. Eight years, 33 brands, 10 million followers.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Instrument+Sans:wght@400;500;600&display=swap">
+<style>
+/* A · Cover. A glossy magazine: Didone masthead, cover lines for the numbers, full-colour studio photography.
+   The brand book (her portrait, their logo) stays as the centrepiece; a career line turns the numbers into a track record. */
+:root{
+  --paper:#fbf7f4;--ink:#130d10;--ink2:#3a2f34;--mut:#85777d;--line:rgba(19,13,16,.13);--line2:rgba(19,13,16,.24);
+  --rouge:#c8123f;--blush:#f6e4e6;--white:#fff;
+  --disp:"Bodoni Moda","Didot",Georgia,serif;--ui:"Instrument Sans","Helvetica Neue",Arial,sans-serif;--ease:cubic-bezier(.22,.7,.2,1);
+  --k-bg:var(--paper);--k-fg:var(--ink);--k-mut:var(--mut);--k-acc:var(--rouge);--k-line:var(--line2);--k-disp:var(--disp);--k-ui:var(--ui);--k-r:4px;color-scheme:light}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 16px/1.6 var(--ui);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}a{color:inherit}button{font:inherit;color:inherit}:focus-visible{outline:2px solid var(--rouge);outline-offset:3px}
+main{overflow-x:clip}
+.w{max-width:1440px;margin:0 auto;padding-inline:clamp(16px,3vw,48px)}
+.cap{font:600 11px/1.3 var(--ui);letter-spacing:.24em;text-transform:uppercase}
+h1,h2,h3{text-wrap:balance}
+.hd{position:sticky;top:0;z-index:60;background:rgba(251,247,244,.92);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.hd .w{display:flex;align-items:center;gap:24px;height:62px}
+.brand{flex:none;text-decoration:none;font:700 21px/1 var(--disp);letter-spacing:.14em;text-transform:uppercase}
+.brand i{font-weight:400;letter-spacing:.04em;text-transform:none;color:var(--rouge)}
+.nav{display:flex;gap:2px;margin-inline:auto;overflow-x:auto;scrollbar-width:none}.nav::-webkit-scrollbar{display:none}
+.nav a{flex:none;padding:8px 13px;text-decoration:none;font:500 12px/1 var(--ui);letter-spacing:.14em;text-transform:uppercase;color:var(--ink2);border-bottom:1px solid transparent;transition:color .3s,border-color .3s}
+.nav a:hover,.nav a.on{color:var(--rouge);border-color:var(--rouge)}
+.book{flex:none;display:inline-flex;align-items:center;height:40px;padding:0 20px;background:var(--ink);color:var(--white);text-decoration:none;font:600 12px/1 var(--ui);letter-spacing:.16em;text-transform:uppercase;transition:background .3s}
+.book:hover{background:var(--rouge)}
+@media(max-width:1000px){.hd .w{flex-wrap:wrap;height:auto;padding-block:12px 0;gap:0 12px}.brand{order:1;font-size:18px}.book{order:2;margin-left:auto;height:34px;padding:0 14px}.nav{order:3;width:calc(100% + 32px);margin:8px -16px 0;padding:0 8px 6px}}
+/* cover */
+.cover{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);min-height:min(92vh,980px)}
+.shot{position:relative;overflow:hidden;background:var(--ink);min-height:560px}
+.shot img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 18%;opacity:0;transform:scale(1.06);transition:opacity 1.4s var(--ease),transform 7s linear}
+.shot img.on{opacity:1;transform:scale(1)}
+.shot .issue{position:absolute;left:22px;bottom:20px;z-index:2;display:flex;gap:6px}
+.shot .issue button{width:34px;height:3px;border:0;padding:0;background:rgba(255,255,255,.4);cursor:pointer}
+.shot .issue button[aria-current="true"]{background:var(--white)}
+.shot .tag{position:absolute;right:20px;bottom:16px;z-index:2;color:var(--white);font:italic 400 15px/1 var(--disp);text-shadow:0 1px 10px rgba(0,0,0,.4)}
+.lines{display:flex;flex-direction:column;justify-content:space-between;gap:36px;padding:clamp(28px,4vw,64px) clamp(20px,4vw,64px) clamp(28px,3vw,44px);min-width:0}
+.mast{margin:18px 0 0;font:900 clamp(64px,9vw,160px)/.8 var(--disp);letter-spacing:-.02em;text-transform:uppercase}
+.mast em{display:block;margin-top:.12em;font:italic 400 .44em/1 var(--disp);letter-spacing:0;text-transform:none;color:var(--rouge)}
+.lead{margin:22px 0 0;max-width:38ch;color:var(--ink2);font-size:17px}
+.cl{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));border-top:1px solid var(--ink)}
+.cl a{display:block;padding:18px 16px 18px 0;border-bottom:1px solid var(--line2);text-decoration:none}
+.cl a:nth-child(odd){border-right:1px solid var(--line2)}.cl a:nth-child(even){padding-left:18px}
+.cl b{display:block;font:400 clamp(40px,4.2vw,68px)/.95 var(--disp);letter-spacing:-.02em}
+.cl b i{font-size:.5em;font-style:normal;color:var(--rouge);margin-left:2px}
+.cl span{display:block;margin-top:6px;font:600 11px/1.3 var(--ui);letter-spacing:.2em;text-transform:uppercase;color:var(--ink2)}
+.cl a:hover b{color:var(--rouge)}
+@media(max-width:900px){.cover{grid-template-columns:1fr;min-height:0}.shot{min-height:0;aspect-ratio:4/5}.lines{padding-inline:16px}}
+.tick{background:var(--ink);overflow:hidden}
+.tick .rail{display:flex;align-items:center;gap:clamp(44px,5vw,80px);width:max-content;padding:26px 0;animation:rail 80s linear infinite}
+.tick:hover .rail{animation-play-state:paused}
+@keyframes rail{to{transform:translateX(-50%)}}
+.mk{flex:none;background:var(--white);-webkit-mask:var(--lg) center/contain no-repeat;mask:var(--lg) center/contain no-repeat;opacity:.92}
+.sec{padding-top:clamp(72px,9vw,140px)}
+.sh{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:20px 48px;align-items:end;margin-bottom:clamp(28px,4vw,56px);padding-bottom:22px;border-bottom:1px solid var(--ink)}
+.sh .cap{color:var(--rouge)}
+.sh h2{margin:12px 0 0;font:400 clamp(52px,7.6vw,128px)/.88 var(--disp);letter-spacing:-.025em}
+.sh h2 i{color:var(--rouge)}
+.sh p{margin:0;max-width:44ch;color:var(--ink2)}
+@media(max-width:760px){.sh{grid-template-columns:1fr}}
+/* story */
+.story{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(28px,5vw,80px);align-items:start}
+.story .ph{position:sticky;top:90px;aspect-ratio:4/5;overflow:hidden;background:var(--blush)}
+.story .ph img{width:100%;height:100%;object-fit:cover;object-position:50% 20%}
+.tl{list-style:none;margin:0;padding:0;border-top:1px solid var(--ink)}
+.tl li{display:grid;grid-template-columns:90px minmax(0,1fr);gap:18px;padding:20px 0;border-bottom:1px solid var(--line2)}
+.tl b{font:400 clamp(30px,3vw,44px)/1 var(--disp);color:var(--rouge)}
+.tl h3{margin:4px 0 4px;font:400 clamp(21px,1.9vw,26px)/1.15 var(--disp)}
+.tl p{margin:0;font-size:15px;color:var(--ink2)}
+.proof{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));margin-top:clamp(36px,5vw,64px);border-top:1px solid var(--ink)}
+.proof div{padding:18px 16px 0 0}.proof div+div{padding-left:16px;border-left:1px solid var(--line2)}
+.proof b{display:block;font:400 clamp(40px,4.4vw,72px)/1 var(--disp);letter-spacing:-.02em}
+.proof span{display:block;margin-top:4px;font-size:13px;color:var(--ink2)}
+@media(max-width:900px){.story{grid-template-columns:1fr}.story .ph{position:static;max-width:520px}.proof{grid-template-columns:repeat(2,minmax(0,1fr))}.proof div:nth-child(3){border-left:0;padding-left:0}.proof div:nth-child(n+3){margin-top:18px}}
+/* brand book */
+.fl{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;margin:0 0 24px;padding:2px 0}.fl::-webkit-scrollbar{display:none}
+.fl button{flex:none;height:38px;padding:0 16px;border:1px solid var(--line2);background:transparent;cursor:pointer;font:600 11px/1 var(--ui);letter-spacing:.16em;text-transform:uppercase;transition:background .3s,color .3s}
+.fl button span{margin-left:6px;color:var(--mut)}
+.fl button[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--white)}.fl button[aria-pressed="true"] span{color:var(--blush)}
+.bb{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(8px,1.2vw,18px)}
+@media(max-width:1100px){.bb{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:700px){.bb{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.bc{display:block;width:100%;padding:0;border:0;background:none;text-align:left;cursor:pointer;color:inherit}
+.bc[hidden]{display:none}
+.bc .f{display:block;position:relative;aspect-ratio:3/4;overflow:hidden;background:var(--ink)}
+.bc .f img{width:100%;height:100%;object-fit:cover;object-position:var(--op,50% 50%);filter:grayscale(1) contrast(1.05) brightness(.9);transition:filter 1s var(--ease),transform 1.4s var(--ease)}
+.bc .f::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(15,10,12,0) 30%,rgba(15,10,12,.55) 100%)}
+.bc .lg{position:absolute;left:50%;top:var(--y,64%);z-index:2;width:var(--lw,46%);aspect-ratio:var(--ar,3);transform:translate(-50%,-50%);background:var(--white);-webkit-mask:var(--lg) center/contain no-repeat;mask:var(--lg) center/contain no-repeat;filter:drop-shadow(0 2px 14px rgba(0,0,0,.25));transition:transform .9s var(--ease)}
+.bc .lg.tw{background:none;-webkit-mask:none;mask:none;width:80%;aspect-ratio:auto;text-align:center;color:var(--white);font:700 clamp(22px,2.4vw,34px)/1 var(--disp);letter-spacing:.1em;text-transform:uppercase}
+.bc .bt{position:absolute;left:10px;top:10px;z-index:2;padding:5px 8px;background:var(--white);font:600 10px/1 var(--ui);letter-spacing:.16em;text-transform:uppercase}
+.bc .nm{display:flex;justify-content:space-between;align-items:baseline;gap:10px;padding:10px 2px 0}
+.bc .nm b{font:500 18px/1.2 var(--disp)}
+.bc .nm span{flex:none;font-size:13px;color:var(--mut)}.bc .nm span em{font-style:normal;color:var(--rouge)}
+.bc:hover .f img,.bc:focus-visible .f img{filter:none;transform:scale(1.05)}
+.bc:hover .lg{transform:translate(-50%,-56%)}
+.bc.no-ph .f{background:var(--blush)}.bc.no-ph .f::after{display:none}
+.bc.no-ph .lg{background:var(--ink);filter:none;--y:48%}
+.bc.no-ph .f small{position:absolute;left:0;right:0;bottom:14px;text-align:center;font-size:12px;color:var(--mut)}
+.note{margin:20px 0 0;font-size:13px;color:var(--mut);max-width:80ch}
+/* most watched */
+.mw{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(8px,1.2vw,18px)}
+@media(max-width:1000px){.mw{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.mw a{position:relative;display:block;aspect-ratio:9/14;overflow:hidden;background:var(--ink);color:var(--white);text-decoration:none}
+.mw img{width:100%;height:100%;object-fit:cover;transition:transform 1.4s var(--ease)}
+.mw a:hover img{transform:scale(1.05)}
+.mw a::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(15,10,12,.55) 0%,rgba(15,10,12,0) 30%,rgba(15,10,12,0) 45%,rgba(15,10,12,.85) 100%)}
+.mw .rk{position:absolute;left:14px;top:10px;z-index:2;font:italic 400 clamp(40px,4vw,64px)/1 var(--disp)}
+.mw .pf{position:absolute;right:12px;top:16px;z-index:2;font:600 10px/1 var(--ui);letter-spacing:.18em;text-transform:uppercase;opacity:.85}
+.mw .tx{position:absolute;left:14px;right:14px;bottom:14px;z-index:2}
+.mw .tx b{display:block;font:400 clamp(44px,4.6vw,76px)/.9 var(--disp);letter-spacing:-.02em}
+.mw .tx b i{font-size:.42em;font-style:normal;margin-left:4px;letter-spacing:.06em}
+.mw .tx span{display:block;margin-top:8px;font-size:14px}
+.mw .tx small{display:block;margin-top:2px;font-size:12px;opacity:.75}
+.mw a:first-child{grid-column:span 2;grid-row:span 2;aspect-ratio:auto}
+@media(max-width:1000px){.mw a:first-child{grid-column:span 2;grid-row:auto;aspect-ratio:4/5}}
+/* on tv */
+.tv{margin-top:clamp(72px,9vw,140px);background:var(--ink);color:var(--white);padding:clamp(56px,7vw,110px) 0}
+.tv .sh{border-color:rgba(255,255,255,.4)}.tv .sh p{color:rgba(255,255,255,.75)}.tv .sh .cap,.tv .sh h2 i{color:#ff6d8f}
+.tvf{position:relative;display:block;aspect-ratio:16/9;overflow:hidden;color:var(--white);text-decoration:none}
+.tvf img{width:100%;height:100%;object-fit:cover;transition:transform 1.6s var(--ease)}
+.tvf:hover img{transform:scale(1.03)}
+.tvf .play{position:absolute;left:50%;top:50%;width:96px;height:96px;transform:translate(-50%,-50%);border-radius:50%;border:1px solid rgba(255,255,255,.7);display:grid;place-items:center;transition:background .4s}
+.tvf .play::before{content:"";margin-left:6px;border-left:22px solid var(--white);border-block:14px solid transparent}
+.tvf:hover .play{background:var(--rouge);border-color:var(--rouge)}
+.tvf .c2{position:absolute;left:18px;right:18px;bottom:16px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:13px}
+@media(max-width:640px){.tvf .play{width:64px;height:64px}.tvf .play::before{border-left-width:16px;border-block-width:10px;margin-left:4px}}
+/* worlds */
+.wt{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;margin-bottom:18px}.wt::-webkit-scrollbar{display:none}
+.wt button{flex:none;height:42px;padding:0 20px;border:1px solid var(--line2);background:transparent;cursor:pointer;font:600 11px/1 var(--ui);letter-spacing:.16em;text-transform:uppercase}
+.wt button[aria-selected="true"]{background:var(--rouge);border-color:var(--rouge);color:var(--white)}
+.k-car{position:relative}
+.k-track{display:grid;grid-auto-flow:column;grid-auto-columns:min(62vw,320px);gap:clamp(8px,1.2vw,16px);overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding-inline:max(clamp(16px,3vw,48px),calc((100vw - 1440px)/2 + clamp(16px,3vw,48px)));scroll-padding-inline:max(clamp(16px,3vw,48px),calc((100vw - 1440px)/2 + clamp(16px,3vw,48px)))}
+.k-track::-webkit-scrollbar{display:none}
+.k-track button{scroll-snap-align:start;border:0;padding:0;overflow:hidden;cursor:zoom-in;background:var(--blush)}
+.k-track img{width:100%;aspect-ratio:3/4;object-fit:cover;transition:transform 1.2s var(--ease)}
+.k-track button:hover img{transform:scale(1.04)}
+.wd{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-top:16px}
+.wd p{margin:0;color:var(--ink2);max-width:60ch}
+.arr{display:flex;gap:8px}
+.arr button{width:46px;height:46px;border:1px solid var(--line2);background:transparent;cursor:pointer;font-size:18px;transition:background .3s,color .3s}
+.arr button:hover{background:var(--ink);color:var(--white)}
+/* services */
+.sv{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0 clamp(24px,3vw,48px)}
+.sv>div{padding:22px 0 24px;border-bottom:1px solid var(--line2)}
+.sv h3{margin:0;font:400 clamp(26px,2.2vw,34px)/1.05 var(--disp)}
+.sv p{margin:8px 0 0;font-size:15px;color:var(--ink2)}
+.sv small{display:block;margin-top:10px;font:600 11px/1.4 var(--ui);letter-spacing:.14em;text-transform:uppercase;color:var(--mut)}
+.sv small b{color:var(--rouge);font-weight:600}
+@media(max-width:1000px){.sv{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:620px){.sv{grid-template-columns:1fr}}
+/* contact */
+.ct{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(28px,5vw,80px);align-items:end;padding:clamp(36px,5vw,72px) 0 0;border-top:1px solid var(--ink)}
+.ct h2{margin:14px 0 0;font:400 clamp(60px,9vw,150px)/.86 var(--disp);letter-spacing:-.03em}
+.ct h2 i{color:var(--rouge)}
+.mail{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:8px}
+.mail span{font:400 clamp(22px,2.2vw,30px)/1.2 var(--disp);user-select:all;border-bottom:1px solid var(--rouge);overflow-wrap:anywhere}
+.mail button{height:38px;padding:0 16px;border:1px solid var(--ink);background:transparent;cursor:pointer;font:600 11px/1 var(--ui);letter-spacing:.16em;text-transform:uppercase}
+.mail button:hover{background:var(--ink);color:var(--white)}
+.soc{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));margin-top:26px;border-top:1px solid var(--line2)}
+.soc a{display:block;padding:16px 12px 0 0;text-decoration:none}
+.soc b{display:block;font:400 clamp(30px,3vw,44px)/1 var(--disp)}
+.soc span{font:600 11px/1.3 var(--ui);letter-spacing:.2em;text-transform:uppercase;color:var(--ink2)}
+.soc a:hover b{color:var(--rouge)}
+@media(max-width:860px){.ct{grid-template-columns:1fr}}
+.ft{padding-block:clamp(60px,8vw,110px) 26px}
+.ft .big{margin:0;font:900 clamp(64px,17vw,300px)/.8 var(--disp);letter-spacing:-.03em;text-transform:uppercase;text-align:center}
+.ft .row{display:flex;justify-content:space-between;gap:10px 24px;flex-wrap:wrap;margin-top:26px;padding-top:16px;border-top:1px solid var(--line);font-size:13px;color:var(--mut)}
+.ft a{text-decoration:none}.ft a:hover{color:var(--rouge)}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<header class="hd"><div class="w">
+  <a class="brand" href="#top">Menna <i>el Sonny</i></a>
+  <nav class="nav" aria-label="Chapters"><a href="#story">Story</a><a href="#brands">Brand book</a><a href="#watched">Most watched</a><a href="#tv">On TV</a><a href="#worlds">Her worlds</a><a href="#services">Services</a><a href="#contact">Contact</a></nav>
+  <a class="book" href="#contact">Book Menna</a>
+</div></header>
+<main id="top"></main>
+<footer class="w ft"><p class="big">Menna</p><div class="row"><span>Business inquiries: mennaelsony@hotmail.com</span><span><a href="https://www.instagram.com/menna_el_sonny/" target="_blank" rel="noopener">Instagram</a> · <a href="https://www.tiktok.com/@mennaelsonny5" target="_blank" rel="noopener">TikTok</a> · <a href="https://www.facebook.com/MennaElsonnyOfficial" target="_blank" rel="noopener">Facebook</a></span><a href="index.html">All directions</a></div></footer>
+<script src="data.js"></script><script src="brands.js"></script><script src="logos.js"></script><script src="proof.js"></script><script src="kit.js"></script>
+<script>
+(function(){
+const D=MD,P=MP.PROOF,e=K.esc,L=window.LOGO||{},AR=window.LOGOAR||{};
+const I=n=>'img/'+n+'.jpg';
+const pic=(n,a,eager)=>`<img src="${I(n)}" alt="${e(a||'Menna El Sonny')}" loading="${eager?'eager':'lazy'}" decoding="async">`;
+const lf=s=>'logos/'+(L[s]||s+'.svg'),ar=s=>AR[s]||3,lw=s=>Math.max(34,Math.min(66,Math.round(28*Math.sqrt(ar(s)))))+'%';
+const mark=(s,name)=>L[s]?`<span class="lg" style="--lg:url(${lf(s)});--ar:${ar(s)};--lw:${lw(s)}" aria-hidden="true"></span>`:`<span class="lg tw" aria-hidden="true">${e(name)}</span>`;
+const B=MB.B,cnt=c=>c==='all'?B.length:B.filter(b=>b.cat===c).length;
+const card=b=>{const c=MB.CATS.find(x=>x[0]===b.cat)[1],has=b.imgs.length,meta=b.posts?(b.likes?`<em>${b.likes}</em> likes`:`${b.posts} post${b.posts>1?'s':''}`):'TikTok';
+  return `<button class="bc${has?'':' no-ph'}"${b.pos?` style="--op:${b.pos}"`:''} data-camp="${b.id}" data-cat="${b.cat}" aria-label="${e(b.name)}: ${e(b.line)}"><span class="f">${has?pic(b.imgs[0],b.name):''}<span class="bt">${c}</span>${mark(b.logo,b.name)}${has?'':'<small>On TikTok + stories</small>'}</span><span class="nm"><b>${e(b.name)}</b><span>${meta}</span></span></button>`};
+const rail=B.filter(b=>L[b.logo]).map(b=>{const a=ar(b.logo),h=a>4?20:a<1.6?36:28;return `<span class="mk" style="--lg:url(${lf(b.logo)});height:${h}px;width:${Math.round(h*a)}px" role="img" aria-label="${e(b.name)}"></span>`}).join('');
+const HERO=['st-lace-close1','ev-brown1','nt-fur2','ev-leopard3','rr-grey2','nt-red2'];
+window.KSETS={};MP.WORLDS.forEach(w=>window.KSETS['w-'+w.id]=w.imgs);
+
+document.getElementById('top').innerHTML=`
+<section class="cover" aria-label="Menna El Sonny">
+  <div class="shot" id="shot">${HERO.map((n,i)=>pic(n,'Menna El Sonny, portrait '+(i+1),i<2)).join('')}
+    <div class="issue" role="group" aria-label="Choose cover photo">${HERO.map((n,i)=>`<button type="button" aria-label="Photo ${i+1}" aria-current="${i?'false':'true'}" data-c="${i}"></button>`).join('')}</div>
+    <span class="tag">Cairo</span></div>
+  <div class="lines">
+    <div><span class="cap" style="color:var(--rouge)">Lifestyle &amp; skincare creator · since 2018</span>
+      <h1 class="mast">Menna<em>el Sonny</em></h1>
+      <p class="lead">Eight years of posting, ${P.brands} brand partners, and ten million people who followed her from Cairo outfit photos to motherhood.</p></div>
+    <div class="cl">
+      <a href="https://www.instagram.com/menna_el_sonny/" target="_blank" rel="noopener"><b>${P.ig.replace('M','')}<i>M</i></b><span>on Instagram</span></a>
+      <a href="https://www.tiktok.com/@mennaelsonny5" target="_blank" rel="noopener"><b>${P.tt.replace('M','')}<i>M</i></b><span>on TikTok · ${P.ttLikes} likes</span></a>
+      <a href="#brands"><b>${P.brands}</b><span>brands · ${P.returning} came back</span></a>
+      <a href="#tv"><b>TV</b><span>Sundae, Ramadan 2026</span></a>
+    </div>
+  </div>
+</section>
+<div class="tick" aria-label="Brands she has worked with"><div class="rail">${rail}${rail}</div></div>
+
+<section class="sec w" id="story">
+  <div class="sh"><div><span class="cap">The story</span><h2>Eight years, <i>one</i> voice</h2></div><p>She did not appear with one viral video. Her first post is from August 2018; the brands, the wedding, Laila and the TV commercial came one year at a time.</p></div>
+  <div class="story">
+    <div class="ph">${pic('st-navy2','Menna El Sonny in navy satin')}</div>
+    <div>
+      <ol class="tl">${MP.TIMELINE.map(t=>`<li><b>${t.y}</b><div><h3>${e(t.t)}</h3><p>${e(t.d)}</p></div></li>`).join('')}</ol>
+      <div class="proof"><div><b>${P.posts}</b><span>Instagram posts since 2018</span></div><div><b>${P.likes}</b><span>likes on Instagram alone</span></div><div><b>${P.comments}</b><span>comments, real conversations</span></div><div><b>${P.returning}/${P.brands}</b><span>brands that booked her again</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec w" id="brands">
+  <div class="sh"><div><span class="cap">The brand book</span><h2>Her face, <i>their</i> name</h2></div><p>${B.length} brands from DeFacto to Gulf Air, each on her own cover. Counted from her Instagram since 2019. Tap any brand for the campaign.</p></div>
+  <div class="fl" role="toolbar" aria-label="Filter brands">${MB.CATS.map((c,i)=>`<button type="button" data-f="${c[0]}" aria-pressed="${i?'false':'true'}">${c[1]}<span>${cnt(c[0])}</span></button>`).join('')}</div>
+  <div class="bb">${B.map(card).join('')}</div>
+  <p class="note">Trendyol, inDrive, Air Arabia and Yango Play ran on TikTok and in stories.</p>
+</section>
+
+<section class="sec w" id="watched">
+  <div class="sh"><div><span class="cap">Most watched</span><h2>The <i>millions</i></h2></div><p>Her biggest videos across Instagram and TikTok, ranked by views. The top one passed ${P.topIG}; all eight together pass 110 million.</p></div>
+  <div class="mw">${MP.TOP.map((x,i)=>`<a href="${x.url}" target="_blank" rel="noopener" aria-label="${e(x.t)}, ${x.v} million views on ${x.p}">${pic(x.img,x.t)}<span class="rk">${String(i+1).padStart(2,'0')}</span><span class="pf">${x.p}</span><span class="tx"><b>${x.v}<i>M VIEWS</i></b><span>${e(x.t)}</span><small>${e(x.sub)} · ${x.l} likes · ${x.y}</small></span></a>`).join('')}</div>
+</section>
+
+<section class="tv" id="tv"><div class="w">
+  <div class="sh"><div><span class="cap">On TV</span><h2>Sundae, <i>Ramadan</i></h2></div><p>Ramadan 2026: Menna joins the cast of the Sundae ice cream commercial, on air through the season and posted as a collab reel.</p></div>
+  <a class="tvf" href="https://www.instagram.com/reel/DU_ZR_FAMhs/" target="_blank" rel="noopener" aria-label="Watch the Sundae Ramadan commercial">${pic('b-sundae-tv','A frame from the Sundae Ramadan TV commercial')}<span class="play"></span><span class="c2"><span>Sundae Ice Cream · TV commercial</span><span>Watch the reel ↗</span></span></a>
+</div></section>
+
+<section class="sec" id="worlds"><div class="w">
+  <div class="sh"><div><span class="cap">Her worlds</span><h2>Four <i>chapters</i></h2></div><p>Beauty, fashion, travel and family. Every photo here is from the last two years. Tap one to see it large.</p></div>
+  <div class="wt" role="tablist" aria-label="Worlds">${MP.WORLDS.map((w,i)=>`<button role="tab" aria-selected="${i?'false':'true'}" data-w="${w.id}">${e(w.t)}</button>`).join('')}</div></div>
+  <div class="k-car"><div class="k-track" id="wrow"></div><div class="w wd"><p id="wdesc"></p><div class="arr"><button data-dir="-1" aria-label="Previous">←</button><button data-dir="1" aria-label="Next">→</button></div></div></div>
+</section>
+
+<section class="sec w" id="services">
+  <div class="sh"><div><span class="cap">Work with Menna</span><h2>What she <i>makes</i></h2></div><p>Twelve formats across TikTok and Instagram, from one video to a season as your face.</p></div>
+  <div class="sv">${D.SERV.map(s=>`<div><h3>${e(s.t)}</h3><p>${e(s.d)}</p><small><b>${e(s.proof)}</b> ${e(s.pl)}</small></div>`).join('')}</div>
+</section>
+
+<section class="sec w" id="contact">
+  <div class="ct">
+    <div><span class="cap" style="color:var(--rouge)">Business inquiries</span><h2>Book <i>Menna</i></h2></div>
+    <div><p style="margin:0 0 12px;color:var(--ink2)">Write with your brand, the idea and your dates.</p>
+      <div class="mail"><span>${D.EMAIL}</span><button type="button" data-copy="${D.EMAIL}">Copy email</button></div>
+      <div class="soc"><a href="https://www.instagram.com/menna_el_sonny/" target="_blank" rel="noopener"><b>${P.ig}</b><span>Instagram</span></a><a href="https://www.tiktok.com/@mennaelsonny5" target="_blank" rel="noopener"><b>${P.tt}</b><span>TikTok</span></a><a href="https://www.facebook.com/MennaElsonnyOfficial" target="_blank" rel="noopener"><b>${P.fb}</b><span>Facebook</span></a></div>
+    </div>
+  </div>
+</section>`;
+
+const shot=document.getElementById('shot'),ims=[...shot.querySelectorAll('img')],dots=[...shot.querySelectorAll('[data-c]')];let cur=0,tm;
+function show(i){cur=(i+ims.length)%ims.length;ims.forEach((im,k)=>{im.classList.toggle('on',k===cur);if(k===(cur+1)%ims.length)im.loading='eager'});dots.forEach((d,k)=>d.setAttribute('aria-current',k===cur))}
+function auto(){clearInterval(tm);if(!matchMedia('(prefers-reduced-motion: reduce)').matches)tm=setInterval(()=>show(cur+1),5200)}
+dots.forEach(d=>d.addEventListener('click',()=>{show(+d.dataset.c);auto()}));show(0);auto();
+const bb=document.querySelector('.bb');
+document.querySelector('.fl').addEventListener('click',ev=>{const b=ev.target.closest('[data-f]');if(!b)return;document.querySelectorAll('.fl button').forEach(x=>x.setAttribute('aria-pressed',x===b));bb.querySelectorAll('.bc').forEach(c=>c.hidden=!(b.dataset.f==='all'||c.dataset.cat===b.dataset.f))});
+const wrow=document.getElementById('wrow'),wdesc=document.getElementById('wdesc');
+function setW(id){const w=MP.WORLDS.find(x=>x.id===id);wrow.innerHTML=w.imgs.map((n,i)=>`<button type="button" data-lb="w-${id}" data-i="${i}" aria-label="Open photo ${i+1}">${pic(n,w.t)}</button>`).join('');wrow.scrollLeft=0;wdesc.textContent=w.d+' '+w.imgs.length+' photos.';document.querySelectorAll('.wt button').forEach(b=>b.setAttribute('aria-selected',b.dataset.w===id))}
+document.querySelector('.wt').addEventListener('click',ev=>{const b=ev.target.closest('[data-w]');if(b)setW(b.dataset.w)});setW('studio');
+const links=[...document.querySelectorAll('.nav a')];
+const io=new IntersectionObserver(es=>es.forEach(en=>{if(en.isIntersecting)links.forEach(a=>a.classList.toggle('on',a.getAttribute('href')==='#'+en.target.id))}),{rootMargin:'-45% 0px -50% 0px'});
+['story','brands','watched','tv','worlds','services','contact'].forEach(id=>{const el=document.getElementById(id);if(el)io.observe(el)});
+})();
+</script>
+</body>
+</html>
